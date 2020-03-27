@@ -1,0 +1,120 @@
+.main-register {
+    margin-top: 100px;
+}
+
+.card {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.582);
+    color: rgb(0, 0, 0);
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 50px;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 500;
+    margin: 40px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.heading{
+    font-size: 15px;
+    color: rgba(8, 8, 8, 0.76);
+    margin: 20px;
+}
+
+.carda a{
+    color: rgba(22, 20, 20, 0.726);
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    border-radius: 1rem;
+    font-size: 15px;
+}
+
+.carda a:hover{
+    background: #000;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-primary {
+
+    margin-top: 10px;
+    border-radius: 2rem;
+    border: none;
+    background: #cc2b5e;
+    font-weight: 600;
+    color: #fff ;
+    padding: 10px 20px;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+}
+ .btn-primary:hover {
+    background: #320541;
+    color: #fff;
+}
+
+.form-group{
+    padding: 5px;
+}
+
+
+label{
+    font-weight: 200; 
+    line-height: 20px; 
+    font-size: medium; 
+    padding-top: 10px;
+    text-align: left;
+}
+
+.register-left .register-right{
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+
+    background: rgba(65, 53, 53, 0.582);
+    color: rgb(0, 0, 0);
+    border-radius: 1.5rem;
+    margin:40px;
+    padding: 20px 40px 20px 40px;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+}
+
+.register-right{
+    margin-top: 100px;
+}
+
+#contact input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+.ok {
+    padding : 20px;
+ }
+
+ @media screen and (max-width: 400px) {
+    .card {
+        margin: 0 20px 50px 20px;
+    }
+}

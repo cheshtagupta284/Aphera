@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+
+
+    <!--stylesheets-->
+    <link rel="stylesheet" href="/css/web-fonts-with-css/css/fontawesome-all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <div id="status">
+            &nbsp;
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="brand">
+            <img src="/img/Aphera..png" width="80%" alt="">
+        </div>
+        <a href="store_dash.html">Dashboard</a>
+        <a href="requests_user.html">Requests</a>
+        <a href="camps.html">Camps</a>
+        <a class="active" href="contact_us.html">Contact Us</a>
+        <div style="text-align: center;" class= "sign-out"> <button class="btn btn-light">Sign Out</button> </div>
+    </div>
+
+    <div class="content">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-5">
+                    <h1 style="margin: 10px;">Get in touch !</h1>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card">
+                        <form id="form-register-store">
+                            <div class="form-group" style="margin: 0 0 30px 0">
+                                <input name="email" class="form-control ok" style ="padding: 20px;" type="email" placeholder="Email"
+                                    id='contact-email' required>
+                            </div>
+                            <div class="form-group" style="margin: 30px 0 30px 0">
+                                    <input name="name" class="form-control ok" style ="padding: 20px;" type="text" placeholder="Your Name"  id='contact-name' required>
+                            </div>
+                            <div class="form-group row">
+                                    <label for="type" class="col-md-4 col-form-label">Category</label>
+                                    <div class="col-md-8">
+                                    <select class="form-control"  id="types-select-contact" required>
+                                        <option>Complaint</option>
+                                        <option>Suggestion</option>
+                                        <option>Feedback</option>
+                                        <option>Others</option>
+                                    </select>
+                                </div>
+                                </div>
+                                <div class="form-group" style="margin: 10px 0 30px 0">
+                                    <label for="comment">Comment</label>
+                                    <textarea class="form-control ok" rows="5" id="comment"></textarea>
+                                  </div>
+                            <button class="btn btn-outline-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--Preloader-->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="/js/dash_store.js"></script>
+</body>
+
+</html>
