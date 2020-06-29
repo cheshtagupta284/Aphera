@@ -15,10 +15,10 @@ $("#Sign-in").on('submit', (e) => {
         data: JSON.stringify(dat),
         success: (r) => {
             localStorage.setItem('token', r['access_token']);
-            window.location.href = 'pages/user_dash.html';
+            window.location.href = '/client/pages/user_dash.html';
         },
         error: (r) => {
-            window.location.href = "pages/error.html"
+            window.location.href = "/client/pages/error.html"
         },
         contentType: "application/json",
         dataType: 'json'
@@ -60,7 +60,7 @@ $("#form-register-user").on('submit', (e) => {
         data: JSON.stringify(dat),
         success: (r) => {
             console.log(r)
-            window.location.href = '/index.html';
+            window.location.href = '/client/index.html';
         }
         , error: console.log,
         contentType: "application/json",
@@ -100,7 +100,7 @@ $("#form-register-registrar").on('submit', (e) => {
         }
         , error: (r) => {
             console.log(r);
-            window.location.href = "error.html"
+            window.location.href = "/client/pages/error.html"
         },
         contentType: "application/json",
         dataType: 'json'
@@ -114,7 +114,7 @@ $("#form-register-registrar").on('submit', (e) => {
         data: JSON.stringify(dat),
         success: (r) => {
             localStorage.setItem('token', r['access_token']);
-            window.location.href = 'register_store.html';
+            window.location.href = '/client/pages/register_store.html';
         },
         error: (r) => {
             console.log(r)
@@ -145,7 +145,7 @@ $("#form-register-store").on('submit', (e) => {
         data: JSON.stringify(dat_store),
         success: (r) => {
             console.log(r)
-            window.location.href = 'store_dash.html'
+            window.location.href = '/client/pages/store_dash.html'
         }
         , error: console.log,
         contentType: "application/json",
@@ -158,5 +158,5 @@ $("#form-register-store").on('submit', (e) => {
 
 $(".sign-out").click(function () {
     localStorage.clear();
-    window.location.href = "/index.html"
+    window.location.href = "/client/index.html"
 })

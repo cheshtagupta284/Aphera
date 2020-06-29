@@ -55,7 +55,7 @@ $.ajax({
     url: 'http://localhost:5000/user',
     success: r => {
         if (r.user.role == 'registrar') {
-            window.location.href = "store_dash.html"
+            window.location.href = "/client/pages/store_dash.html"
         }
         $("#name-head").replaceWith(r.user.name);
         $("#name").replaceWith(r.user.name);
@@ -123,5 +123,5 @@ function accept(e) {
 
 $(".sign-out").click(function () {
     localStorage.clear();
-    window.location.href = "/index.html"
+    window.location.href = "/client/index.html"
 })

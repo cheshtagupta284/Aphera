@@ -304,5 +304,5 @@ function delete_blood(e) {
 
 $(".sign-out").click(function () {
     localStorage.clear();
-    window.location.href = "/index.html"
+    window.location.href = "/client/index.html"
 })
