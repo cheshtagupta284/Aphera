@@ -1,3 +1,7 @@
+# Python Specific
 **/__pycache__
 *.pyo
 *.pyc
+
+# Database
+*.db
