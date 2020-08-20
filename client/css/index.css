@@ -1,104 +1,111 @@
-body {
-    background-image: linear-gradient(to right, #02182e  70%,  #00c4c4 30%);    
+*{
+    margin: 0;
+    padding: 0;
 }
-.main {
-    margin-top: 150px;
+
+html, body {
+    height: 100%;
 }
-.form-left {
+.fill-height {
+    min-height: 100%;
+    height: 100%; /* cross-browser */
+}
+.testclass {
+    background-color: rgba(0, 1, 10, 0.582);
+    background-blend-mode: overlay;
+}
+.form-left {    
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(/client/img/creators-collective-aSBqqUn2IFM-unsplash.jpg);
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
     text-align: center;
     color: #fff;
 }
 
-.form-left h2 {
-    font-weight: 500;
-    margin-bottom: 30px;
+.form-right{
+    padding: 100px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 1, 10) ;
+}
+
+.form-left h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
 }
 
 img {
-    width: 50%;
+    width: 30%;
     margin: 0;
 }
 
 .form-left .btn-primary {
-    margin-top: 40px;
+    margin-top: 80px;
     border-radius: 2rem;
     border: none;
     background: #fff;
-    color: #000;
+    color: rgb(0, 1, 10);
     padding: 10px 20px;
     font-weight: 600;
     transition: all 300ms ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
 }
 .form-left .btn-primary:hover {
-    background: #000;
+    background: rgb(0, 1, 10);
     color: #fff;
 }
 
-.form-right {
-    background: rgba(255, 255, 255, 0.527);
-    border-radius: 1.5rem;
-    padding: 50px;
-
-}
 .form-right h2{
-    font-weight: 500;
-    text-align: center;
-    color: #fff;
-    padding-bottom: 30px;
-}
-
-.form-left i {
-    font-size: 70px;
-    text-align: center;
+    padding-top: 10px;
+    font-weight: bolder;
+    color:  rgb(0, 1, 10) ;
     margin-bottom: 10px;
 }
-.form-control {
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 1rem;
-    padding: 20px;
+.form-right h5{
+    margin-bottom: 50px;
 }
-
-.form-control:focus {
-        border-color: #000 solid 10px;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px #02182e;
+.form-right h6{
+    font-size: smaller;
+    float: right;    
 }
-
 .form-right .btn-primary {
-    float: right;
-    margin-top: 30px;
+    margin-top: 55px;
     border-radius: 2rem;
     border: none;
-    background: #02182e;
+    background: rgb(0, 1, 10) ;
     font-weight: 600;
-    color: #fff ;
+    color: #fff;
     padding: 10px 20px;
     transition: all 300ms ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
 }
 .form-right .btn-primary:hover {
-    background: #00c4c4;
-    color: #fff;
+    background: #850d1d;
+    color: rgb(0, 1, 10) ;
 }
-.form-right div{
-    margin-top: 30px;
-    color: #fff;
+.reg{
+float:right;
     font-size: 15px;
     line-height: 3rem;
 }
 
 .form-right div a{
     text-decoration: underline;
-    color: #fff;
     font-weight: 500;
     transition: all 300ms ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
 }
 .form-right div a:hover {
-    color: #00c4c4;
+    color: #c9c620;
 } 
 @media screen and (max-width: 411px) {
+    body {
+        background-color:#d41313;    
+    }
     img {
         width: 40%;
     }
