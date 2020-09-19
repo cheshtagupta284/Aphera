@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* height 100% */
 html, body {
     height: 100%;
 }
@@ -10,10 +11,14 @@ html, body {
     min-height: 100%;
     height: 100%; /* cross-browser */
 }
-.testclass {
+
+/* overlay */
+.overlay {
     background-color: rgba(0, 1, 10, 0.582);
     background-blend-mode: overlay;
 }
+
+/* left form */
 .form-left {    
     padding-top: 100px;
     padding-bottom: 100px;
@@ -24,27 +29,18 @@ html, body {
     text-align: center;
     color: #fff;
 }
-
-.form-right{
-    padding: 100px;
-    background: rgb(255, 255, 255);
-    color: rgb(0, 1, 10) ;
-}
-
 .form-left h4 {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 20px;
 }
-
 img {
     width: 30%;
     margin: 0;
 }
-
-.form-left .btn-primary {
-    margin-top: 80px;
+.btn-primary{
+    margin-top: 127px;
     border-radius: 2rem;
     border: none;
     background: #fff;
@@ -55,10 +51,18 @@ img {
     -webkit-transition: all 300ms ease-in-out;
 }
 .form-left .btn-primary:hover {
-    background: rgb(0, 1, 10);
+    background: #d41313;
     color: #fff;
 }
 
+
+/* right form element */
+.form-right{
+    padding: 5%;
+    padding-top: 100px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 1, 10) ;
+}
 .form-right h2{
     padding-top: 10px;
     font-weight: bolder;
@@ -68,55 +72,26 @@ img {
 .form-right h5{
     margin-bottom: 50px;
 }
-.form-right h6{
-    font-size: smaller;
-    float: right;    
-}
 .form-right .btn-primary {
     margin-top: 55px;
-    border-radius: 2rem;
-    border: none;
     background: rgb(0, 1, 10) ;
-    font-weight: 600;
     color: #fff;
-    padding: 10px 20px;
-    transition: all 300ms ease-in-out;
-    -webkit-transition: all 300ms ease-in-out;
 }
 .form-right .btn-primary:hover {
-    background: #850d1d;
-    color: rgb(0, 1, 10) ;
+    background: #d41313;
+    color: #fff;
 }
-.reg{
-float:right;
-    font-size: 15px;
-    line-height: 3rem;
-}
-
-.form-right div a{
+.form-right .reg{
+    margin:0;
+    float:right;
+    font-size: smaller;
     text-decoration: underline;
     font-weight: 500;
     transition: all 300ms ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
+    position: relative;
+    top: -30px;
 }
-.form-right div a:hover {
-    color: #c9c620;
-} 
-@media screen and (max-width: 411px) {
-    body {
-        background-color:#d41313;    
-    }
-    img {
-        width: 40%;
-    }
-    .main {
-        margin-top: 50px;
-    }
-    .form-left{
-        margin-top: 0;
-        margin-bottom: 40px;
-    }
-    .form-right {
-        margin: 0 20px 50px 20px;
-    }
+.form-right .reg:hover {
+    color: #d41313;
 }

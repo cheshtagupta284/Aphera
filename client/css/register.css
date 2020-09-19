@@ -1,5 +1,13 @@
-.main-register {
-    margin-top: 100px;
+body{
+    
+   
+    color: #fff;
+}
+.side-bar{
+    background-image: url(/client/img/4009963.jpg);
+    /* background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat; */
 }
 
 .card {

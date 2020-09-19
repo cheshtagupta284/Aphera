@@ -11,11 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
 
-    <!--Font Awesome-->
-    <link href="/client/css/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
-
     <!--stylesheets-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="/client/css/common.css">
     <link rel="stylesheet" href="/client/css/index.css">
 </head>
@@ -23,46 +21,50 @@
 <body>
     <div class="container-fluid fill-height">
         <div class="row main fill-height">
-                    <div class="col-md-6 form-left testclass">
-                        <div><img src="img/output-onlinepngtools.png" alt="" width="100%"></div>
-                        <h4>Aphera</h4>   
-                        <h6>Be a blood donor today</h6>                     
-                        <button class="btn btn-primary">About Us</button>
-                        
-                    </div>
 
-                    <div class="col-md-6 form-right">
-                        <h2>Sign In</h2>
-                        <h6>Sign Up instead</h6>
-                        <h5>Welcome back.</h5>
-                        <form id="Sign-in">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input name="username" class="form-control" type="text" placeholder="Email" id='email'
-                                    required>
-                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> 
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input name="password" class="form-control" type="password" placeholder="Password"
-                                    id='password' required>
-                                    <small id="passwordHelpBlock" class="form-text text-muted">
-                                        Your password must be 8-20 characters long.
-                                    </small>
-                            </div>
-                            <button class="btn btn-primary">Submit</button> 
-                        </form>
-                        
+            <!-- left division -->
+            <div class="col-md-6 form-left overlay">
+                <div><img src="img/output-onlinepngtools.png" alt="" width="100%"></div>
+                <h4>Aphera</h4>
+                <h6>Be a blood donor today</h6>
+                <button class="btn btn-primary">About Us</button>
+            </div>
+
+            <!-- right division -->
+            <div class="col-md-6 form-right " id="sign-in">
+                <!-- heading -->
+                <h2 id="sign-value">Sign In</h2>                
+                <h5 id="sign-info">Welcome back.</h5>
+                <!-- sign in form -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input name="username" class="form-control" type="text" placeholder="Email" id='email' required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input name="password" class="form-control" type="password" placeholder="Password" id='password'
+                            required>
+                        <small id="passwordHelpBlock" class="form-text text-muted">
+                            Your password must be 8-20 characters long.
+                        </small>
+                    </div>
+                    <button class="btn btn-primary">Submit</button>
+                </form>
+                <h6 class="reg">Sign Up instead</h6>
+                
+            </div>
+            
+        </div>
     </div>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jquery-cookie-master/src/jquery.cookie.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" crossorigin="anonymous"></script>
     <script src="/client/js/script.js"></script>
 
 </body>
+
 </html>
