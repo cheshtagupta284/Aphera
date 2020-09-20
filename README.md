@@ -10,4 +10,4 @@ Some more texts
 
 ## Local changes
 
-demo
+1. Open it on your browser
